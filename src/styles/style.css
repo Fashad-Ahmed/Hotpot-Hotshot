@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'gotham-bold';
-    src: url('/Font/gotham-black-webfont.woff') format('woff2'),
-        url('/Font/gotham-black-webfont.woff2') format('woff');
+    src: url('../fonts/gotham-black-webfont.woff') format('woff2'),
+        url('../fonts/gotham-black-webfont.woff2') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -790,7 +790,7 @@ footer p img {
 }
 
 .slides .slide:nth-child(1) {
-    background: url("../img/Rectangle 451.png") center/cover;
+    background: url("../assets/Rectangle\ 451.png") center/cover;
 }
 
 .slides .slide:nth-child(1):hover {
@@ -809,7 +809,7 @@ footer p img {
 }
 
 .slides .slide:nth-child(2) {
-    background: url("../img/Rectangle 452.png") center/cover;
+    background: url("../assets/Rectangle\ 452.png") center/cover;
 }
 
 .slides .slide:nth-child(2):hover {
@@ -828,7 +828,7 @@ footer p img {
 }
 
 .slides .slide:nth-child(3) {
-    background: url("../img/Rectangle 453.png") center/cover;
+    background: url("../assets/Rectangle\ 453.png") center/cover;
 }
 
 .slides .slide:nth-child(3):hover {
@@ -847,7 +847,7 @@ footer p img {
 }
 
 .slides .slide:nth-child(4) {
-    background: url("../img/Rectangle 454.png") center/cover;
+    background: url("../assets/Rectangle\ 454.png") center/cover;
 }
 
 .slides .slide:nth-child(4):hover {
@@ -866,7 +866,7 @@ footer p img {
 }
 
 .slides .slide:nth-child(5) {
-    background: url("../img/Rectangle 455.png") center/cover;
+    background: url("../assets/Rectangle\ 455.png") center/cover;
 }
 
 .slides .slide:nth-child(5):hover {
@@ -1572,7 +1572,7 @@ background-size: cover;
     margin-top: 10%;
     width: 100%;
     min-height: 100vh;
-    background: url(../img/Group\ 75322464.png);
+    background: url('../assets/Group\ 75322464.png');
     background-position: center;
     background-size: cover;
 }
@@ -1711,7 +1711,7 @@ background-size: cover;
     margin-top: 10%;
     width: 100%;
     min-height: 100vh;
-    background: url(../img/Img\ 1.png);
+    background: url('../assets/Img\ 1.png');
     background-position: center;
     background-size: cover;
 }
@@ -1746,7 +1746,7 @@ background-size: cover;
     margin-top: 10%;
     width: 100%;
     min-height: 50vh;
-    background: url(../img/image\ 61.png);
+    background: url('../assets/image\ 61.png');
     background-position: center;
     background-size: cover;
     /* background-attachment: fixed; */
@@ -1820,7 +1820,7 @@ background-size: cover;
 #VP1 {
     width: 100%;
     min-height: 60vh;
-    background: url(../img/Group\ 75322462\ \(1\).png);
+    background: url('../assets/Group\ 75322462\ \(1\).png');
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -1875,7 +1875,7 @@ background-size: cover;
 #VP2 {
     width: 100%;
     min-height: 80vh;
-    background: url(../img/Img\ 2.png);
+    background: url('../assets/Img\ 2.png');
     background-position: center;
     background-size: cover;
     margin: 0;
@@ -1912,7 +1912,7 @@ background-size: cover;
 #VP3 {
     width: 100%;
     min-height: 60vh;
-    background: url(../img/Group\ 75322462\ \(2\).png);
+    background: url("../assets/Group\ 75322462\ \(2\).png");
     background-position: center;
     background-size: cover;
     margin: 0;
