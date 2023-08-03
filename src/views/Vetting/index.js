@@ -1,12 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from "react";
 
 const Vetting = () => {
   return (
-    <View>
-      <Text>Vetting</Text>
-    </View>
-  )
-}
+    <div>
+      <h1>About</h1>
+    </div>
+  );
+};
 
-export default Vetting
+export default Vetting;

@@ -1,12 +1,11 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import React from "react";
 
 const Under2k = () => {
   return (
-    <View>
-      <Text>Under2k</Text>
-    </View>
-  )
-}
+    <div>
+      <h1>About</h1>
+    </div>
+  );
+};
 
-export default Under2k
+export default Under2k;
