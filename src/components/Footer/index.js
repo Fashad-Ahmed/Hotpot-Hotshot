@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import bannerImage from "../../assets/Group 75322139 - Copy.png";
 import vector1 from "../../assets/Vector (1).png";
 import vector2 from "../../assets/Vector (2).png";
@@ -24,67 +25,91 @@ const Footer = () => {
             </p>
           </div>
           <div className="col-lg-2 col-md-6 col-sm-6 col-6">
-            <h1>Services</h1>
+            <h1
+              style={{
+                fontFamily: "serif",
+              }}
+            >
+              Services
+            </h1>
             <ul>
               <li>
-                <a href="#">Under 2k lbs</a>
+                <Link to="/Under2k">Under 2k lbs</Link>
               </li>
               <li>
-                <a href="#">General Freight</a>
+                <Link to="/GeneralFreight">General Freight</Link>
               </li>
               <li>
-                <a href="#">Motor Vehicle</a>
+                <Link to="/MotorVehicle">Motor Vehicle</Link>
               </li>
               <li>
-                <a href="#">Junk Haul-off</a>
+                <Link to="/JunkHaul">Junk Haul-off</Link>
               </li>
               <li>
-                <a href="#">26’ box truck</a>
+                <Link to="/BoxTruck">26’ box truck</Link>
               </li>
             </ul>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-            <h1>Resources</h1>
+            <h1
+              style={{
+                fontFamily: "serif",
+              }}
+            >
+              Resources
+            </h1>
             <ul>
               <li>
-                <a href="#">About </a>
+                <Link to="/About">About </Link>
               </li>
               <li>
-                <a href="#">FAQ’s</a>
+                <Link to="/FAQ">FAQ’s</Link>
               </li>
               <li>
-                <a href="help.html">Help</a>
+                <Link to="/Help">Help</Link>
               </li>
               <li>
-                <a href="blog.html">Blogs</a>
+                <Link to="/Blog">Blogs</Link>
               </li>
             </ul>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-            <h1>Shipper</h1>
+            <h1
+              style={{
+                fontFamily: "serif",
+              }}
+            >
+              Shipper
+            </h1>
             <ul>
               <li>
-                <a href="Dashboard-Preview.html">Dashboard Preview</a>
+                <Link to="/Dashboard">Dashboard Preview</Link>
               </li>
               <li>
-                <a href="Vetting-Process.html">Carrier Vetting Process</a>
+                <Link to="/Vetting">Carrier Vetting Process</Link>
               </li>
               <li>
-                <a href="Tracking-Tech.html">Hello Hotshot Tracking Tech </a>
+                <Link to="/TrackingTech">Hello Hotshot Tracking Tech </Link>
               </li>
             </ul>
           </div>
           <div className="col-lg-2 col-md-3 col-sm-6 col-6">
-            <h1>Carrier</h1>
+            <h1
+              style={{
+                fontFamily: "serif",
+              }}
+            >
+              Carrier
+            </h1>
             <ul>
               <li>
-                <a href="Carriers -App-Preview.html">Carrier App Preview</a>
+                <Link to="/CarriersApp">Carrier App Preview</Link>
               </li>
               <li>
-                <a href="CDL-School.html">CDL School for Hotshot</a>
+                <Link to="/CDLSchool">CDL School for Hotshot</Link>
               </li>
               <li>
-                <a href="HH-Guide.html">Hotshot Guideline</a>
+                <Link to="/HHGuide">Hotshot Guideline</Link>
               </li>
             </ul>
           </div>

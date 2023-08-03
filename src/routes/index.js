@@ -2,6 +2,8 @@ import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import React, { Suspense, lazy } from "react";
 import Footer from "./../components/Footer";
 import Loader from "./../components/Loader";
+import Subscribe from "../components/Subscribe";
+import Topbar from "../components/Topbar";
 
 const About = lazy(() => import("../views/About"));
 const Blog = lazy(() => import("../views/Blog"));
@@ -30,7 +32,7 @@ const Home = lazy(() => import("../views/Home"));
 const RoutesProvider = () => {
   return (
     <BrowserRouter>
-      {/* <Topbar /> */}
+      <Topbar />
       <Suspense fallback={<Loader />}>
         <Routes>
           <Route path="/" exact element={<Home />} />
@@ -38,7 +40,7 @@ const RoutesProvider = () => {
           <Route path="/About" exact element={<About />} />
           <Route path="/Blog" exact element={<Blog />} />
           <Route path="/BoxTruck" exact element={<BoxTruck />} />
-          <Route path="/CarriersAapp" exact element={<CarriersAapp />} />
+          <Route path="/CarriersApp" exact element={<CarriersAapp />} />
           <Route path="/CdlNon" exact element={<CdlNon />} />
           <Route path="/CDLSchool" exact element={<CDLSchool />} />
           <Route path="/ELD" exact element={<ELD />} />
@@ -60,6 +62,7 @@ const RoutesProvider = () => {
         </Routes>
       </Suspense>
       {/* <MobileBottombar /> */}
+      <Subscribe />
       <Footer />
     </BrowserRouter>
   );
