@@ -10,7 +10,7 @@ const Topbar = () => {
     <nav id="navigation" className="navbar navbar-expand-lg fixed-top">
       <div className="container align-items-stretch">
         <div className="logo d-none d-sm-none d-md-none d-lg-block">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <img src={brand} />
           </a>
         </div>
