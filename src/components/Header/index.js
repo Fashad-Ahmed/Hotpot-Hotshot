@@ -61,6 +61,26 @@ const Header = () => {
                 <br />
                 Discover the Power of about OpenAI and Artificial Intelligence
               </h1>
+            ) : currentPath === "/Blog" ? (
+              <h1>
+                Our Tracking tech, we are
+                <br />
+                making everything easy for you
+              </h1>
+            ) : currentPath === "/CarriersApp" ? (
+              <h1>
+                Our Carrier App, we are making <br />
+                making everything easy for you
+              </h1>
+            ) : currentPath === "/CDLSchool" ? (
+              <h1>
+                Welcome to Our Website: <br />
+                Discover the Power of about OpenAI and Artificial Intelligence{" "}
+              </h1>
+            ) : currentPath === "/CDLNon" ? (
+              <h1>Our Tracking tech, we are making everything easy for you</h1>
+            ) : currentPath === "/Contact" ? (
+              <h1>Get in Touch and Let's Connect with contact us.</h1>
             ) : (
               <h1>
                 Simplify your shipping process
@@ -69,7 +89,7 @@ const Header = () => {
               </h1>
             )}
 
-            <a className="btn-lig" href="#">
+            <a className="btn-lig" href="/Contact">
               Ship With Us
             </a>
             <Link className="btn-drk d-none d-sm-inline" to="/CarriersApp">
