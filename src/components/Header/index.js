@@ -107,6 +107,10 @@ const Header = () => {
               <h1>
                 Model A Weighs Under 2K lbs fuel-efficient and compact design.
               </h1>
+            ) : currentPath === "/Vetting" ? (
+              <h1>
+                Our vetting Process, we are making everything Easiest for you
+              </h1>
             ) : (
               <h1>
                 Simplify your shipping process
