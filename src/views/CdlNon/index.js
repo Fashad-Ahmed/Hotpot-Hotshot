@@ -2,10 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ReactPlayer from "react-player";
 import Header from "../../components/Header";
-import rectImg from "../../assets/Rectangle 480.png";
-import rect1 from "../../assets/Rectangle 482 (1).png";
-import rect2 from "../../assets/Rectangle 483.png";
-import rect3 from "../../assets/Rectangle 484.png";
 import vid from "../../assets/Dunes.mp4";
 import "../../styles/style.css";
 

@@ -77,10 +77,20 @@ const Header = () => {
                 Welcome to Our Website: <br />
                 Discover the Power of about OpenAI and Artificial Intelligence{" "}
               </h1>
-            ) : currentPath === "/CDLNon" ? (
+            ) : currentPath === "/CDLNon" ||
+              currentPath === "/ELD" ||
+              currentPath === "/HHGuide" ||
+              currentPath === "/Insurance" ? (
               <h1>Our Tracking tech, we are making everything easy for you</h1>
             ) : currentPath === "/Contact" ? (
               <h1>Get in Touch and Let's Connect with contact us.</h1>
+            ) : currentPath === "/FAQ" ? (
+              <h1>Common categories you can write an FAQ page for include.</h1>
+            ) : currentPath === "/GeneralFreight" ? (
+              <h1>
+                Quick and efficient General freight door-to-door delivery for
+                small parcels.
+              </h1>
             ) : (
               <h1>
                 Simplify your shipping process
