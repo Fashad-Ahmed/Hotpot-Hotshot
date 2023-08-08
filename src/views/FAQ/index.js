@@ -27,7 +27,17 @@ const FAQ = () => {
       answer:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
-    // Add more FAQ items here
+    {
+      question: "1914 translation by H. Rackham",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
+    {
+      question:
+        "Section 1.10.33 of de Finibus Bonorum et Malorum, written by Cicero?",
+      answer:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    },
   ];
 
   return (
@@ -63,15 +73,15 @@ const FAQ = () => {
               </p>
             </div>
             <div className="col-lg-2" />
-            <div className="col-lg-6">
+            <div className="col-lg-8">
               <div className="wrapper">
                 {faqData.map((faqItem, index) => (
                   <div className="faq" key={index}>
                     <button
-                      onClick={() => handleAccordionClick(index)}
                       style={{
-                        backgroundColor: "red",
+                        fontFamily: "serif",
                       }}
+                      onClick={() => handleAccordionClick(index)}
                       className={`accordion ${
                         activeIndex === index ? "active" : ""
                       }`}
@@ -82,19 +92,18 @@ const FAQ = () => {
                           display: "inline-block",
                         }}
                         src={vec239}
+                        alt="Arrow"
                       />
                     </button>
                     <div
-                      className={`pannel ${
-                        activeIndex === index ? "show" : ""
-                      }`}
+                      className={`panel ${activeIndex === index ? "show" : ""}`}
                     >
                       <h6
                         style={{
                           fontFamily: "serif",
                         }}
                       >
-                        {faqItem.answer}
+                        {activeIndex === index ? faqItem.answer : ""}
                       </h6>
                     </div>
                   </div>
@@ -115,6 +124,7 @@ const FAQ = () => {
                       display: "inline-block",
                     }}
                     src={grpImg}
+                    alt="Group"
                   />
                 </p>
                 <h2

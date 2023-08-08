@@ -111,6 +111,11 @@ const Header = () => {
               <h1>
                 Our vetting Process, we are making everything Easiest for you
               </h1>
+            ) : currentPath === "/Help" ? (
+              <h1>
+                Clearly defining the issue will help you find the most relevant
+                help resources.
+              </h1>
             ) : (
               <h1>
                 Simplify your shipping process
