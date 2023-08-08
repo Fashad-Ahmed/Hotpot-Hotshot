@@ -80,7 +80,10 @@ const Header = () => {
             ) : currentPath === "/CDLNon" ||
               currentPath === "/ELD" ||
               currentPath === "/HHGuide" ||
-              currentPath === "/Insurance" ? (
+              currentPath === "/Insurance" ||
+              currentPath === "/Roadside" ||
+              currentPath === "/Usdot" ||
+              currentPath === "/WeightMatters" ? (
               <h1>Our Tracking tech, we are making everything easy for you</h1>
             ) : currentPath === "/Contact" ? (
               <h1>Get in Touch and Let's Connect with contact us.</h1>
@@ -90,6 +93,19 @@ const Header = () => {
               <h1>
                 Quick and efficient General freight door-to-door delivery for
                 small parcels.
+              </h1>
+            ) : currentPath === "/JunkHaul" ? (
+              <h1>
+                Reliable experts to efficiently remove and dispose of unwanted
+                Junk haul-off
+              </h1>
+            ) : currentPath === "/MotorVehicle" ? (
+              <h1>Versatile vehicles for hauling cargo or towing trailers</h1>
+            ) : currentPath === "/TrackingTech" ? (
+              <h1>Our premium Apple Tracking Tech</h1>
+            ) : currentPath === "/Under2k" ? (
+              <h1>
+                Model A Weighs Under 2K lbs fuel-efficient and compact design.
               </h1>
             ) : (
               <h1>

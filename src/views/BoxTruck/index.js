@@ -63,7 +63,7 @@ const BoxTruck = () => {
       <section id="Services" style={{ marginBottom: "10%" }}>
         <div
           style={{
-            padding: "20px 30px 20px 30px",
+            padding: "0px 30px 20px 30px",
           }}
         >
           <div className="row">

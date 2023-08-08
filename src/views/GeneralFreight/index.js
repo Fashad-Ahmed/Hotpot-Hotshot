@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header";
 import imgP from "../../assets/services image/image 46.png";
-import svsImg from "../../assets/services image/image 461.png";
 import serImg from "../../assets/Group 75322246.png";
 import "../../styles/style.css";
 

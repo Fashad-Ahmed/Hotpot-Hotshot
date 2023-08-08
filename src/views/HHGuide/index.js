@@ -50,27 +50,25 @@ const HHGuide = () => {
                   data-aos-once="true"
                 >
                   <li className="mt-2 ml-3">
-                    <a href="HH-Guide.html">Truck, Trailer, and Tools</a>
+                    <Link to="#">Truck, Trailer, and Tools</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="CDLv.non-CDL.html">CDL v. non-CDL</a>
+                    <Link to="CdlNon">CDL v. non-CDL</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="Weight-Matters.html">Weight Matters</a>
+                    <Link to="/WeightMatters">Weight Matters</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="US_DOT+FMCSA.html">US DOT + FMCSA</a>
+                    <Link to="/Usdot">US DOT + FMCSA</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="Insurance.html">Insurance</a>
+                    <Link to="/Insurance">Insurance</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="Electronic_Logging_Devices.html">
-                      Electronic Logging Devices
-                    </a>
+                    <Link to="/ELD">Electronic Logging Devices</Link>
                   </li>
                   <li className="mt-2 ml-3">
-                    <a href="Roadside-Inspections.html">Roadside Inspections</a>
+                    <Link to="/Roadside">Roadside Inspections</Link>
                   </li>
                 </ul>
               </div>
