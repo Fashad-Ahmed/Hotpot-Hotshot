@@ -138,7 +138,14 @@ const About = () => {
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <img src={s1Img} width="100%" />
-              <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
+              <h2
+                style={{
+                  fontFamily: "serif",
+                }}
+                data-aos="zoom-in"
+                data-aos-delay={300}
+                data-aos-once="true"
+              >
                 Under 2K lbs
               </h2>
               <p data-aos="fade-up" data-aos-delay={300} data-aos-once="true">
@@ -151,7 +158,14 @@ const About = () => {
             </div>
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <img src={s2Img} width="100%" />
-              <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
+              <h2
+                style={{
+                  fontFamily: "serif",
+                }}
+                data-aos="zoom-in"
+                data-aos-delay={300}
+                data-aos-once="true"
+              >
                 General Freight
               </h2>
               <p data-aos="fade-up" data-aos-delay={300} data-aos-once="true">
@@ -164,7 +178,14 @@ const About = () => {
             </div>
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <img src={s3Img} width="100%" />
-              <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
+              <h2
+                style={{
+                  fontFamily: "serif",
+                }}
+                data-aos="zoom-in"
+                data-aos-delay={300}
+                data-aos-once="true"
+              >
                 Motor Vehicle
               </h2>
               <p data-aos="fade-up" data-aos-delay={300} data-aos-once="true">
@@ -178,7 +199,14 @@ const About = () => {
             <div className="col-lg-2 col-md-2 d-none d-md-block" />
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <img src={s5Img} width="100%" />
-              <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
+              <h2
+                style={{
+                  fontFamily: "serif",
+                }}
+                data-aos="zoom-in"
+                data-aos-delay={300}
+                data-aos-once="true"
+              >
                 Junk Haul-off
               </h2>
               <p data-aos="fade-up" data-aos-delay={300} data-aos-once="true">
@@ -191,7 +219,14 @@ const About = () => {
             </div>
             <div className="col-lg-4 col-md-4 col-sm-6 col-12">
               <img src={s4Img} width="100%" />
-              <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
+              <h2
+                style={{
+                  fontFamily: "serif",
+                }}
+                data-aos="zoom-in"
+                data-aos-delay={300}
+                data-aos-once="true"
+              >
                 26’ Boc Truck
               </h2>
               <p data-aos="fade-up" data-aos-delay={300} data-aos-once="true">

@@ -8,6 +8,7 @@ import Topbar from "../components/Topbar";
 const About = lazy(() => import("../views/About"));
 const Blog = lazy(() => import("../views/Blog"));
 const BoxTruck = lazy(() => import("../views/BoxTruck"));
+const BoxTruckForm = lazy(() => import("../views/BoxTruckForm"));
 const CarriersAapp = lazy(() => import("../views/CarriersAapp"));
 const CdlNon = lazy(() => import("../views/CdlNon"));
 const CDLSchool = lazy(() => import("../views/CDLSchool"));
@@ -40,6 +41,7 @@ const RoutesProvider = () => {
           <Route path="/About" exact element={<About />} />
           <Route path="/Blog" exact element={<Blog />} />
           <Route path="/BoxTruck" exact element={<BoxTruck />} />
+          <Route path="/BoxTruckForm" exact element={<BoxTruckForm />} />
           <Route path="/CarriersApp" exact element={<CarriersAapp />} />
           <Route path="/CdlNon" exact element={<CdlNon />} />
           <Route path="/CDLSchool" exact element={<CDLSchool />} />

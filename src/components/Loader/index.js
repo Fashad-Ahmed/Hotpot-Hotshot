@@ -13,7 +13,7 @@ const Loader = () => {
     <Flex h={"80vh"} color={"black"}>
       <Flex w={"100%"} h="100%" justify={"center"} align={"center"}>
         <Box as={motion.div} animation={animation}>
-          <CircularProgress value={30} color={"000000"} />
+          <CircularProgress value={30} color={"#000000"} />
         </Box>
       </Flex>
     </Flex>

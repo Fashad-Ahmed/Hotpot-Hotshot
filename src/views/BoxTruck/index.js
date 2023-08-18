@@ -51,6 +51,11 @@ const BoxTruck = () => {
               data-aos-once="true"
             >
               <img src={svsImg} width="100%" style={{ marginTop: "4%" }} />
+              <p style={{ textAlign: "center", marginTop: "5%" }}>
+                <a href="LRF-26’Box-truck.html" className="btn-drk">
+                  Get free quote{" "}
+                </a>
+              </p>
             </div>
           </div>
         </div>
