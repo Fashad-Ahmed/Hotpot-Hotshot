@@ -2452,6 +2452,7 @@ line-height: normal;
     left: 25px;
     content: " Drag and drop files here ";
     font-weight: 900;
+    font-family: 'serif';
     
 }
 

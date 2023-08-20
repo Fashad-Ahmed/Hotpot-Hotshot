@@ -4,25 +4,10 @@ import mainImg from "../../assets/Group 75322508.png";
 import "../../styles/style.css";
 import { Link, useNavigate } from "react-router-dom";
 
-const BoxTruckForm = () => {
+const JunkHaulForm = () => {
   const navigation = useNavigate();
-  const [pickupZip, setPickupZip] = useState("");
-  const [dropoffZip, setDropoffZip] = useState("");
-  const [locationType, setLocationType] = useState("");
-  const [loadMethod, setLoadMethod] = useState("");
-  const [selectedFiles, setSelectedFiles] = useState([]);
-
-  const handleFileChange = (event) => {
-    const files = event.target.files;
-    setSelectedFiles(files);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
   const handleGoBack = () => {
-    navigation("/BoxTruck");
+    navigation("/JunkHaul");
   };
 
   return (
@@ -85,19 +70,7 @@ const BoxTruckForm = () => {
                       placeholder="Drop-off Zip"
                     />
                   </div>
-                  <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <h2
-                      style={{
-                        fontFamily: "serif",
-                      }}
-                    >
-                      Location Type
-                    </h2>
-                    <select>
-                      <option selected="">Select location type</option>
-                      <option>...</option>
-                    </select>
-                  </div>
+
                   <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <h2
                       style={{
@@ -151,5 +124,4 @@ const BoxTruckForm = () => {
     </section>
   );
 };
-
-export default BoxTruckForm;
+export default JunkHaulForm;

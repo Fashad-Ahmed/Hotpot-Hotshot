@@ -1,28 +1,13 @@
 import React, { useState } from "react";
 import vectorImg from "../../assets/Group 75322139 - Copy.png";
 import mainImg from "../../assets/Group 75322508.png";
-import "../../styles/style.css";
 import { Link, useNavigate } from "react-router-dom";
+import "../../styles/style.css";
 
-const BoxTruckForm = () => {
+const GeneralFreightForm = () => {
   const navigation = useNavigate();
-  const [pickupZip, setPickupZip] = useState("");
-  const [dropoffZip, setDropoffZip] = useState("");
-  const [locationType, setLocationType] = useState("");
-  const [loadMethod, setLoadMethod] = useState("");
-  const [selectedFiles, setSelectedFiles] = useState([]);
-
-  const handleFileChange = (event) => {
-    const files = event.target.files;
-    setSelectedFiles(files);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-  };
-
   const handleGoBack = () => {
-    navigation("/BoxTruck");
+    navigation("/GeneralFreight");
   };
 
   return (
@@ -51,10 +36,12 @@ const BoxTruckForm = () => {
               </div>
             </div>
           </div>
+          {/*  */}
+
           <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 p-0">
             <div className="right-LRF">
               <h1>Load Request</h1>
-              <h3 style={{ fontFamily: "serif" }}>26’Box truck</h3>
+              <h3>General Freight / Heavy Equipment</h3>
               <form style={{ marginTop: "6%" }}>
                 <div className="row">
                   <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -91,10 +78,37 @@ const BoxTruckForm = () => {
                         fontFamily: "serif",
                       }}
                     >
-                      Location Type
+                      Estimated Weight *
                     </h2>
                     <select>
-                      <option selected="">Select location type</option>
+                      <option selected="">100 - 1000 lbs</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <h2
+                      style={{
+                        fontFamily: "serif",
+                      }}
+                    >
+                      Longest Dimension
+                    </h2>
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder="Longest Dimension"
+                    />
+                  </div>
+                  <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                    <h2
+                      style={{
+                        fontFamily: "serif",
+                      }}
+                    >
+                      Load Method *
+                    </h2>
+                    <select>
+                      <option selected="">Manual Load (ML)</option>
                       <option>...</option>
                     </select>
                   </div>
@@ -104,12 +118,39 @@ const BoxTruckForm = () => {
                         fontFamily: "serif",
                       }}
                     >
-                      Load Method *
+                      Ready for Pickup?
                     </h2>
-                    <select>
-                      <option selected="">Select load method</option>
-                      <option>...</option>
-                    </select>
+                    <div className="form-check " style={{ display: "inline" }}>
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios1"
+                        defaultValue="option1"
+                        defaultChecked=""
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="exampleRadios1"
+                      >
+                        Yes
+                      </label>
+                    </div>
+                    <div className="form-check" style={{ display: "inline", marginLeft: "8px" }}>
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="exampleRadios"
+                        id="exampleRadios2"
+                        defaultValue="option2"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="exampleRadios2"
+                      >
+                        No
+                      </label>
+                    </div>
                   </div>
                   <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <h2
@@ -120,36 +161,27 @@ const BoxTruckForm = () => {
                       Photos optional (suggested)
                     </h2>
                     <div className="upload-container">
-                      <input
-                        style={{
-                          fontFamily: "serif",
-                        }}
-                        type="file"
-                        id="file_upload"
-                        multiple="true"
-                      />
+                      <input type="file" id="file_upload" multiple="true" />
                     </div>
                   </div>
                   <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <p style={{ textAlign: "left" }}>
                       {" "}
-                      <button
-                        style={{
-                          fontFamily: "serif",
-                        }}
-                      >
-                        Submit
-                      </button>
+                      <button style={{
+                        fontFamily: 'serif'
+                      }} >Submit</button>
                     </p>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+
+          {/*  */}
         </div>
       </div>
     </section>
   );
 };
 
-export default BoxTruckForm;
+export default GeneralFreightForm;

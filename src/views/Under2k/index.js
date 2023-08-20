@@ -18,7 +18,7 @@ const Under2k = () => {
             <div className="col-lg-2 col-md-1"></div>
             <div className="col-lg-8 col-md-10">
               <h1 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
-              Under 2k Lbs
+                Under 2k Lbs
               </h1>
               <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
                 It is a long established fact that a will be distracted by the
@@ -51,6 +51,12 @@ const Under2k = () => {
               data-aos-once="true"
             >
               <img src={svsImg} width="100%" style={{ marginTop: "4%" }} />
+
+              <p style={{ textAlign: "center", marginTop: "5%" }}>
+                <Link to="/Under2kForm" className="btn-drk">
+                  Get free quote{" "}
+                </Link>
+              </p>
             </div>
           </div>
         </div>

@@ -51,6 +51,11 @@ const JunkHaul = () => {
               data-aos-once="true"
             >
               <img src={imgP} width="100%" style={{ marginTop: "4%" }} />
+              <p style={{ textAlign: "center", marginTop: "5%" }}>
+                <Link to="/JunkHaulForm" className="btn-drk">
+                  Get free quote{" "}
+                </Link>
+              </p>
             </div>
           </div>
         </div>

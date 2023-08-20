@@ -14,13 +14,17 @@ const CdlNon = lazy(() => import("../views/CdlNon"));
 const CDLSchool = lazy(() => import("../views/CDLSchool"));
 const ELD = lazy(() => import("../views/ELD"));
 const GeneralFreight = lazy(() => import("../views/GeneralFreight"));
+const GeneralFreightForm = lazy(() => import("../views/GeneralFreightForm"));
 const HHGuide = lazy(() => import("../views/HHGuide"));
 const Insurance = lazy(() => import("../views/Insurance"));
 const JunkHaul = lazy(() => import("../views/JunkHaul"));
+const JunkHaulForm = lazy(() => import("../views/JunkHaulForm"));
 const MotorVehicle = lazy(() => import("../views/MotorVehicle"));
+const MotorVehicleForm = lazy(() => import("../views/MotorVehicleForm"));
 const Roadside = lazy(() => import("../views/Roadside"));
 const TrackingTech = lazy(() => import("../views/TrackingTech"));
 const Under2k = lazy(() => import("../views/Under2k"));
+const Under2kForm = lazy(() => import("../views/Under2kForm"));
 const Usdot = lazy(() => import("../views/Usdot"));
 const Vetting = lazy(() => import("../views/Vetting"));
 const WeightMatters = lazy(() => import("../views/WeightMatters"));
@@ -47,13 +51,21 @@ const RoutesProvider = () => {
           <Route path="/CDLSchool" exact element={<CDLSchool />} />
           <Route path="/ELD" exact element={<ELD />} />
           <Route path="/GeneralFreight" exact element={<GeneralFreight />} />
+          <Route
+            path="/GeneralFreightForm"
+            exact
+            element={<GeneralFreightForm />}
+          />
           <Route path="/HHGuide" exact element={<HHGuide />} />
           <Route path="/Insurance" exact element={<Insurance />} />
           <Route path="/JunkHaul" exact element={<JunkHaul />} />
+          <Route path="/JunkHaulForm" exact element={<JunkHaulForm />} />
           <Route path="/MotorVehicle" exact element={<MotorVehicle />} />
+          <Route path="MotorVehicleForm" exact element={<MotorVehicleForm />} />
           <Route path="/Roadside" exact element={<Roadside />} />
           <Route path="/TrackingTech" exact element={<TrackingTech />} />
           <Route path="/Under2k" exact element={<Under2k />} />
+          <Route path="/Under2kForm" exact element={<Under2kForm />} />
           <Route path="/Usdot" exact element={<Usdot />} />
           <Route path="/Vetting" exact element={<Vetting />} />
           <Route path="/WeightMatters" exact element={<WeightMatters />} />
