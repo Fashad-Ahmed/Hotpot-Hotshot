@@ -1,0 +1,372 @@
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-BlackItalic.eot");
+  src: url("QanelasSoft-BlackItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-BlackItalic.woff2") format("woff2"),
+    url("QanelasSoft-BlackItalic.woff") format("woff"),
+    url("QanelasSoft-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Bold.eot");
+  src: url("QanelasSoft-Bold.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Bold.woff2") format("woff2"),
+    url("QanelasSoft-Bold.woff") format("woff"),
+    url("QanelasSoft-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Black.eot");
+  src: url("QanelasSoft-Black.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Black.woff2") format("woff2"),
+    url("QanelasSoft-Black.woff") format("woff"),
+    url("QanelasSoft-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-ExtraBoldItalic.eot");
+  src: url("QanelasSoft-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-ExtraBoldItalic.woff2") format("woff2"),
+    url("QanelasSoft-ExtraBoldItalic.woff") format("woff"),
+    url("QanelasSoft-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Heavy.eot");
+  src: url("QanelasSoft-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Heavy.woff2") format("woff2"),
+    url("QanelasSoft-Heavy.woff") format("woff"),
+    url("QanelasSoft-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-BoldItalic.eot");
+  src: url("QanelasSoft-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-BoldItalic.woff2") format("woff2"),
+    url("QanelasSoft-BoldItalic.woff") format("woff"),
+    url("QanelasSoft-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-ExtraBold.eot");
+  src: url("QanelasSoft-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-ExtraBold.woff2") format("woff2"),
+    url("QanelasSoft-ExtraBold.woff") format("woff"),
+    url("QanelasSoft-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Light.eot");
+  src: url("QanelasSoft-Light.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Light.woff2") format("woff2"),
+    url("QanelasSoft-Light.woff") format("woff"),
+    url("QanelasSoft-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-HeavyItalic.eot");
+  src: url("QanelasSoft-HeavyItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-HeavyItalic.woff2") format("woff2"),
+    url("QanelasSoft-HeavyItalic.woff") format("woff"),
+    url("QanelasSoft-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Medium.eot");
+  src: url("QanelasSoft-Medium.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Medium.woff2") format("woff2"),
+    url("QanelasSoft-Medium.woff") format("woff"),
+    url("QanelasSoft-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-LightItalic.eot");
+  src: url("QanelasSoft-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-LightItalic.woff2") format("woff2"),
+    url("QanelasSoft-LightItalic.woff") format("woff"),
+    url("QanelasSoft-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-MediumItalic.eot");
+  src: url("QanelasSoft-MediumItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-MediumItalic.woff2") format("woff2"),
+    url("QanelasSoft-MediumItalic.woff") format("woff"),
+    url("QanelasSoft-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Regular.eot");
+  src: url("QanelasSoft-Regular.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Regular.woff2") format("woff2"),
+    url("QanelasSoft-Regular.woff") format("woff"),
+    url("QanelasSoft-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-RegularItalic.eot");
+  src: url("QanelasSoft-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-RegularItalic.woff2") format("woff2"),
+    url("QanelasSoft-RegularItalic.woff") format("woff"),
+    url("QanelasSoft-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-SemiBold.eot");
+  src: url("QanelasSoft-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-SemiBold.woff2") format("woff2"),
+    url("QanelasSoft-SemiBold.woff") format("woff"),
+    url("QanelasSoft-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-ThinItalic.eot");
+  src: url("QanelasSoft-ThinItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-ThinItalic.woff2") format("woff2"),
+    url("QanelasSoft-ThinItalic.woff") format("woff"),
+    url("QanelasSoft-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-Thin.eot");
+  src: url("QanelasSoft-Thin.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-Thin.woff2") format("woff2"),
+    url("QanelasSoft-Thin.woff") format("woff"),
+    url("QanelasSoft-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-SemiBoldItalic.eot");
+  src: url("QanelasSoft-SemiBoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-SemiBoldItalic.woff2") format("woff2"),
+    url("QanelasSoft-SemiBoldItalic.woff") format("woff"),
+    url("QanelasSoft-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-UltraLight.eot");
+  src: url("QanelasSoft-UltraLight.eot?#iefix") format("embedded-opentype"),
+    url("QanelasSoft-UltraLight.woff2") format("woff2"),
+    url("QanelasSoft-UltraLight.woff") format("woff"),
+    url("QanelasSoft-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Qanelas";
+  src: url("QanelasSoft-UltraLightItalic.eot");
+  src: url("QanelasSoft-UltraLightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("QanelasSoft-UltraLightItalic.woff2") format("woff2"),
+    url("QanelasSoft-UltraLightItalic.woff") format("woff"),
+    url("QanelasSoft-UltraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("CircularStd-Medium.eot");
+  src: url("CircularStd-Medium.eot?#iefix") format("embedded-opentype"),
+    url("CircularStd-Medium.woff2") format("woff2"),
+    url("CircularStd-Medium.woff") format("woff"),
+    url("CircularStd-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-Italic.eot");
+  src: url("EuclidCircularA-Italic.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-Italic.woff2") format("woff2"),
+    url("EuclidCircularA-Italic.woff") format("woff"),
+    url("EuclidCircularA-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-Bold.eot");
+  src: url("EuclidCircularA-Bold.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-Bold.woff2") format("woff2"),
+    url("EuclidCircularA-Bold.woff") format("woff"),
+    url("EuclidCircularA-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-Medium.eot");
+  src: url("EuclidCircularA-Medium.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-Medium.woff2") format("woff2"),
+    url("EuclidCircularA-Medium.woff") format("woff"),
+    url("EuclidCircularA-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-Regular.eot");
+  src: url("EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-Regular.woff2") format("woff2"),
+    url("EuclidCircularA-Regular.woff") format("woff"),
+    url("EuclidCircularA-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-SemiBoldItalic.eot");
+  src: url("EuclidCircularA-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("EuclidCircularA-SemiBoldItalic.woff2") format("woff2"),
+    url("EuclidCircularA-SemiBoldItalic.woff") format("woff"),
+    url("EuclidCircularA-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-Light.eot");
+  src: url("EuclidCircularA-Light.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-Light.woff2") format("woff2"),
+    url("EuclidCircularA-Light.woff") format("woff"),
+    url("EuclidCircularA-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-LightItalic.eot");
+  src: url("EuclidCircularA-LightItalic.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-LightItalic.woff2") format("woff2"),
+    url("EuclidCircularA-LightItalic.woff") format("woff"),
+    url("EuclidCircularA-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-BoldItalic.eot");
+  src: url("EuclidCircularA-BoldItalic.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-BoldItalic.woff2") format("woff2"),
+    url("EuclidCircularA-BoldItalic.woff") format("woff"),
+    url("EuclidCircularA-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-MediumItalic.eot");
+  src: url("EuclidCircularA-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("EuclidCircularA-MediumItalic.woff2") format("woff2"),
+    url("EuclidCircularA-MediumItalic.woff") format("woff"),
+    url("EuclidCircularA-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "euclid";
+  src: url("EuclidCircularA-SemiBold.eot");
+  src: url("EuclidCircularA-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("EuclidCircularA-SemiBold.woff2") format("woff2"),
+    url("EuclidCircularA-SemiBold.woff") format("woff"),
+    url("EuclidCircularA-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}

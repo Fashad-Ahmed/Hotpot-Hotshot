@@ -34,6 +34,10 @@ const FAQ = lazy(() => import("../views/FAQ"));
 const Help = lazy(() => import("../views/Help"));
 const Home = lazy(() => import("../views/Home"));
 
+// Admin Routes
+const AdminDashboard = lazy(() => import("../views/Admin/AdminDashboard"));
+const UserManagement = lazy(() => import("../views/Admin/UserManagement"));
+
 const RoutesProvider = () => {
   return (
     <BrowserRouter>
@@ -73,6 +77,11 @@ const RoutesProvider = () => {
           <Route path="/Dashboard" exact element={<Dashboard />} />
           <Route path="/FAQ" exact element={<FAQ />} />
           <Route path="/Help" exact element={<Help />} />
+          {/* admin routes */}
+
+          <Route path="/AdminDashboard" exact element={<AdminDashboard />} />
+
+          <Route path="/UserManagement" exact element={<UserManagement />} />
         </Routes>
       </Suspense>
       {/* <MobileBottombar /> */}

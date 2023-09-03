@@ -1,0 +1,88 @@
+.authPrimTxt {
+  font-size: calc(22px + (30 - 22) * ((100vw - 320px) / (1920 - 320)));
+  font-weight: 600;
+  color: var(--white);
+  text-transform: capitalize;
+  font-family: "euclid";
+}
+.primText {
+  font-size: calc(14px + (16 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-weight: 500;
+}
+.fw500 {
+  font-weight: 500;
+}
+.primary-inputs {
+  padding: 13px 20px;
+  outline: none;
+  border: 1px solid var(--white);
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.primary-inputs::placeholder {
+  color: var(--white);
+}
+.passDisplay i {
+  color: var(--gray);
+}
+.passwordWrapper .not_btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.passwordWrapper .not_btn:focus {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.primary-inputs {
+  padding: 13px 20px;
+  outline: none;
+  border: 1px solid var(--white);
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--white);
+}
+
+.primary-inputs::placeholder {
+  color: var(--white);
+}
+.secInp {
+  background: #fff;
+  border: 1px solid rgba(206, 206, 206, 0.3);
+  filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.06));
+  color: #000;
+}
+.secInp::placeholder {
+  color: var(--black) !important;
+}
+/* .fa-eye-slash:before {
+  display: none;
+} */
+.PhoneInputInput {
+  outline: none;
+  border: 0;
+  width: 100%;
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--white);
+}
+.secInp .PhoneInputInput {
+  color: var(--black) !important;
+}
+.form-control .PhoneInputInput {
+  color: var(--black) !important;
+}
+
+.prime-label {
+  font-weight: 500;
+}

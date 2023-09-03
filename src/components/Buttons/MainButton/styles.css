@@ -1,0 +1,37 @@
+.sec-btn,
+.main-btn {
+  outline: none;
+  border: none;
+  color: var(--white);
+  padding: 9px 27px;
+  border-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 190px;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-btn {
+  background: linear-gradient(#c90000 0%, #c90000 100%);
+}
+.main-btn:hover {
+  color: var(--white);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#5d3232 0%, #c90000 100%);
+}
+.borderBtn {
+  background: #fff !important;
+  color: var(--text-primary-theme) !important;
+  border: 1px solid var(--text-primary-theme);
+}
+.secondary-theme-button {
+  background-color: var(--text-primary-theme);
+  color: #fff !important;
+  border-radius: 0px;
+  min-width: 150px;
+  text-align: center;
+  border: none;
+}

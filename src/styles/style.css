@@ -2926,3 +2926,465 @@ line-height: normal;
     /* font-weight: 900; */
     
 }
+
+/* @import url("https://fonts.cdnfonts.com/css/euclid-circular-a"); */
+body {
+    font-family: "Euclid Circular A", sans-serif;
+    font-weight: 400;
+  }
+  body {
+    font-size: 0.9rem !important;
+  }
+  :root {
+    --white: #fff;
+    --smoke-white: #f1f3f5;
+    --primColor: #c90000;
+    --primLightColor: #c90000ba;
+    --secColor: #562b2d;
+    --white: #ffffff;
+    --boxColor: #eef0f4;
+    --gray: #999999;
+    --lightGray: #d7d7d7;
+    --blue: #056ed8;
+    --darkGray: #f9f9f9;
+    --primHover: #ed8d3733;
+    --black: #000;
+    --lightBlack: #171717;
+    --green: #37ba00;
+    --red: #df313c;
+    --orange: #ffa51e;
+    --yellow: #eec629;
+    --pink: #fe7ab6;
+    --text-primary-theme: #c90000;
+    --seegreen: #00ccdb;
+    --grey: #beb8b8;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--text-primary-theme);
+    border-color: var(--text-primary-theme);
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    accent-color: var(--text-primary-theme);
+  }
+  
+  .profile-image img {
+    height: 100%;
+  }
+  
+  .car-name h3,
+  .car-name h6 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .table td,
+  .table th {
+    padding: 0.75rem !important;
+  }
+  
+  .colBlue {
+    color: var(--blue) !important;
+  }
+  
+  .colWhite {
+    color: var(--white) !important;
+  }
+  
+  .colGreen {
+    color: var(--green) !important;
+  }
+  
+  .colBlack {
+    color: var(--black) !important;
+  }
+  
+  .colYellow {
+    color: var(--yellow) !important;
+  }
+  
+  .colRed {
+    color: var(--red) !important;
+  }
+  
+  .colOrange {
+    color: var(--orange) !important;
+  }
+  
+  .colBrown {
+    color: var(--secColor) !important;
+  }
+  
+  .cGray {
+    color: var(--gray);
+  }
+  
+  .cBlack {
+    color: var(--black);
+  }
+  
+  .primColor {
+    color: var(--primColor) !important;
+  }
+  
+  .colPink {
+    color: var(--pink) !important;
+  }
+  .f-40 {
+    font-size: 38px;
+    font-weight: 600;
+  }
+  .table td,
+  .table th {
+    vertical-align: middle;
+  }
+  
+  .table th {
+    border-bottom: none !important;
+  }
+  
+  .table tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+  
+  #carFilter button[aria-expanded="false"]::after {
+    content: "\f067";
+    font-family: "FontAwesome";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  
+  #carFilter button[aria-expanded="true"],
+  #carFilter button:hover {
+    color: var(--text-primary-theme) !important;
+  }
+  
+  #carFilter button[aria-expanded="true"]::after {
+    content: "\f068";
+    font-family: "FontAwesome";
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
+  
+  .carousel.carousel-slider {
+    height: 350px;
+  }
+  
+  .carousel .slide img {
+    height: 350px;
+    object-fit: contain;
+  }
+  
+  .footerLogo img {
+    height: 165px;
+    width: 165px;
+    max-width: 100%;
+  }
+  
+  @media (min-width: 1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      max-width: 1140px;
+    }
+  }
+  .ui-datepicker-calendar {
+    display: none;
+  }
+  .btn-theme-solid {
+    background-color: var(--text-primary-theme);
+    color: var(--white);
+    padding: 10px 0px;
+    font-size: 16px;
+    border: 1px solid;
+    display: inline-block;
+    min-width: 250px;
+    text-align: center;
+  }
+  
+  .btn-theme-solid:hover {
+    background-color: transparent;
+    color: var(--text-primary-theme);
+    border: 1px solid var(--text-primary-theme);
+    text-decoration: none;
+  }
+  
+  .listing-title h3,
+  .form-head h3 {
+    font-size: 22px;
+  }
+  
+  .car-features-list h4 {
+    font-size: 18px;
+  }
+  
+  .title-box h4 {
+    font-size: 20px;
+  }
+  
+  .car-name h3 {
+    font-size: 18px;
+  }
+  
+  .car-name h6 {
+    font-size: 14px;
+  }
+  
+  .backBtn {
+    position: absolute;
+    left: 30px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .isFeatured {
+    position: absolute;
+    left: 0;
+    background-color: #c90000;
+    color: #fff;
+    font-size: 12px;
+    height: 75px;
+    width: 98px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    top: -14px;
+    left: -28px;
+    -webkit-clip-path: polygon(50% 0%, 50% 42%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 50% 42%, 50% 100%, 0% 50%);
+    padding-right: 23px;
+    transform: rotate(38deg);
+  }
+  
+  .listingCard {
+    overflow: hidden;
+  }
+  
+  @media (max-width: 799px) {
+    .mainBanner {
+      background-size: cover;
+    }
+  
+    .front-image {
+      position: absolute;
+      left: 105px;
+    }
+  
+    .appImage img {
+      max-width: 100%;
+    }
+  
+    .table td,
+    .table th {
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+  
+    .previous-image {
+      display: none;
+    }
+    .default::after {
+      display: none;
+    }
+  
+    .slides > .row > div:first-child {
+      order: 2;
+    }
+  
+    .slides > .row > div:last-child {
+      order: 1;
+    }
+  
+    .default .navbar-brand > img {
+      width: 4rem !important;
+    }
+  
+    .default .navbar-toggler {
+      color: #fff;
+      opacity: 1;
+      border: none !important;
+      outline: none !important;
+    }
+  
+    .banners .slick-dots {
+      align-items: start;
+      top: -45px;
+      right: unset;
+      left: 0;
+    }
+  
+    .slide-image {
+      height: 400px !important;
+    }
+  
+    .slide-heading {
+      right: -100px !important;
+      top: unset;
+      bottom: 16pc;
+    }
+  
+    nav {
+      padding: 0;
+    }
+  
+    .default div#navbarNav > div {
+      background-color: #000000b0;
+      padding: 10px;
+    }
+  
+    .logo-section,
+    .counter {
+      text-align: center;
+    }
+  
+    .sell-your-car .row > div,
+    .used-car .row > div {
+      margin-bottom: 30px;
+    }
+  
+    .sell-car-slides button.slick-prev {
+      right: 20%;
+    }
+  
+    .title-box h1 {
+      font-size: 25px !important;
+    }
+  
+    .title-box h1 span {
+      display: block;
+    }
+  
+    .login-menu-bar,
+    .guest-menu-bar {
+      align-items: self-end;
+      gap: 20px;
+    }
+  
+    .guest-menu-bar > ul:last-child,
+    .login-menu-bar > ul:last-child {
+      flex-direction: row;
+      gap: 9px;
+    }
+  
+    .row:not(.banners .row) > div {
+      margin-bottom: 25px;
+    }
+  }
+  
+  @media (min-width: 1333px) {
+    header .container {
+      max-width: 1320px;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .auth-bg {
+      height: unset !important;
+      padding: 130px 0 !important;
+      background-size: cover;
+    }
+  }
+  
+  @media (max-width: 1400px) {
+    .slide-heading h3 {
+      font-size: 75px;
+    }
+  
+    .default .navbar-nav li > a,
+    .default .navbar-nav button {
+      font-size: 12px;
+    }
+  
+    .banners .slick-arrow {
+      bottom: 15px;
+      font-size: 12px;
+    }
+  
+    .slide-content {
+      color: #fff;
+      padding: 25px 0;
+      font-size: 12px;
+    }
+  
+    .slide-content h4 {
+      font-size: 20px;
+    }
+  
+    a.navbar-brand img {
+      width: 65px !important;
+    }
+  
+    .previous-image {
+      height: 200px;
+    }
+  
+    .slide-heading {
+      right: -196px;
+    }
+  }
+  
+  @media (max-width: 1170px) {
+    .slide-heading {
+      right: -160px;
+    }
+  
+    .slide-heading h3 {
+      font-size: 60px;
+    }
+  
+    .previous-image {
+      margin-top: 6pc;
+    }
+  }
+  
+  @media (max-width: 991px) {
+    .list-view .listingCard .img_wrapper {
+      width: 100%;
+    }
+  
+    .list-view .listingCard {
+      display: block;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    /* header:not(.default) .navbar-brand {
+        position: absolute;
+    } */
+  
+    .car-name h3,
+    .car-name h6 {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+    }
+  
+    .car-name h3 span {
+      display: none;
+    }
+  
+    header:not(.default) ul {
+      align-items: center;
+    }
+  }
+  
