@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import MainTable from "../../../components/MainTable";
 import { useNavigate } from "react-router-dom";
 import { tableValuesAdmin } from "../../../utils/tableUtils";
+import AdminLayout from "../../../components/AdminLayout";
 
 const tableLabel = [
   "S. NO.",
@@ -50,7 +51,7 @@ const UserManagement = () => {
     //   // });
   }
   return (
-    <>
+    <AdminLayout>
       <MainTable
         heading="User Management"
         tableLabel={tableLabel}
@@ -79,7 +80,7 @@ const UserManagement = () => {
         loading={loading}
         filterStatusArray={constants?.generalStatusArray}
       />
-    </>
+    </AdminLayout>
   );
 };
 

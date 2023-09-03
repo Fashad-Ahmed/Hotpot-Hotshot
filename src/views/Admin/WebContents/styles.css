@@ -1,0 +1,116 @@
+.configuration {
+  margin-left: 280px;
+  background: var(--boxColor);
+  padding: 8rem 0.5rem 1rem 0.5rem;
+  transition: 0.2s linear;
+  min-height: 100vh;
+}
+.removeSideBar .configuration {
+  margin-left: 60px;
+}
+.backLink {
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-align: center;
+  width: 40px;
+  margin-right: 10px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.backLink i {
+  font-size: 20px;
+}
+.section-heading {
+  font-weight: 500;
+  color: var(--secColor);
+  text-transform: capitalize;
+  font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+.show_status {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.myProfile,
+.user_profile {
+  width: 140px;
+  height: 140px;
+}
+
+.user_profile {
+  border-radius: 100%;
+}
+
+.myProfile img,
+.user_profile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.details_wrap label {
+  font-weight: 600;
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.details_wrap p {
+  font-weight: 400;
+}
+.contflexBox {
+  display: flex;
+  align-items: center;
+}
+
+.contflexBox label {
+  flex: 0 0 200px;
+}
+/* custom tabs start */
+.custom_tabs .nav-pills .nav-link.active,
+.custom_tabs .nav-pills .show > .nav-link {
+  color: #fff !important;
+  background-color: var(--primColor);
+}
+
+.custom_tabs .nav-pills .nav-link {
+  width: auto;
+  border-radius: 0 !important;
+  padding: 15px 20px;
+  color: var(--black);
+  font-weight: 400;
+  background-color: var(--lightGray);
+  margin: 10px 10px;
+  min-width: 170px;
+}
+
+.custom_tabs .ul_tabs_wrapper {
+  background-color: var(--white) !important;
+  border-radius: 20px !important;
+  color: var(--black);
+  padding: 5px 5px;
+}
+@media screen and (max-width: 991px) {
+  .configuration {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contflexBox {
+    display: block;
+  }
+  .custom_tabs .nav-pills .nav-link {
+    padding: 15px;
+  }
+}
+.plan-field {
+  margin-left: 0 !important;
+}
+.rdw-editor-main {
+  border: 0.5px solid #777;
+}

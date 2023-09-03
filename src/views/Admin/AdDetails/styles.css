@@ -1,0 +1,122 @@
+.configuration {
+  margin-left: 280px;
+  background: var(--boxColor);
+  padding: 8rem 0.5rem 1rem 0.5rem;
+  transition: 0.2s linear;
+  min-height: 100vh;
+}
+.removeSideBar .configuration {
+  margin-left: 60px;
+}
+@media screen and (max-width: 991px) {
+  .configuration {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 575px) {
+  .contflexBox {
+    display: block;
+  }
+}
+.box {
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 0 6px #e0e0e0;
+  overflow: hidden !important;
+  padding: 30px 40px;
+}
+.section-heading {
+  font-weight: 500;
+  color: var(--secColor);
+  text-transform: capitalize;
+  font-size: calc(18px + (25 - 18) * ((100vw - 320px) / (1920 - 320)));
+}
+.selectingOptions {
+  padding: 10px 20px;
+  border: 1px dashed black;
+  min-width: 120px;
+}
+
+.selectingOptions:focus {
+  outline: none;
+}
+.details_wrap label {
+  font-weight: 600;
+  font-size: calc(15px + (18 - 15) * ((100vw - 320px) / (1920 - 320)));
+}
+
+.details_wrap p {
+  font-weight: 400;
+}
+.contflexBox {
+  display: flex;
+  align-items: center;
+}
+
+.contflexBox label {
+  flex: 0 0 200px;
+}
+.summary_box {
+  padding: 40px 30px;
+}
+.secTitle,
+.analytics-text {
+  font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1920 - 300)));
+  font-family: "Circular";
+  font-weight: 500;
+}
+.features_wrap {
+  border: 1px solid #eaeaea;
+  /* padding: 30px 40px; */
+}
+.features_wrap .cutom_border {
+  border-right: 1px solid #eaeaea;
+}
+
+.features_wrap .cutom_border:last-child {
+  border-right: none;
+}
+.features_box {
+  padding: 30px 20px;
+  transition: 0.8s ease-in-out;
+}
+
+.features_box p {
+  transition: 0.8s ease-in-out;
+}
+
+.features_box:hover {
+  background-color: #c50011;
+}
+
+.features_box:hover p,
+.features_box:hover img {
+  filter: brightness(15);
+}
+.features_box img {
+  height: 35px;
+  margin-bottom: 10px;
+  width: 35px;
+  object-fit: contain;
+  object-position: center;
+  transition: 0.8s ease-in-out;
+}
+.descBox {
+  display: flex;
+  align-items: center;
+  font-family: "euclid";
+  color: #89898a;
+  font-weight: 500;
+}
+
+.descBox img {
+  margin-right: 20px;
+  width: 25px;
+  height: 25px;
+}
+@media screen and (max-width: 991px) {
+  .features_wrap .cutom_border {
+    border: 1px solid #eaeaea;
+  }
+}

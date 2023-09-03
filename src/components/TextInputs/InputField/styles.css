@@ -1,0 +1,88 @@
+
+.primary-inputs {
+    padding: 9px 30px !important;
+    outline: none;
+    border: 1px solid var(--white)!important;
+    width: 100% !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+    color: var(--white) !important;
+}
+
+.primary-inputs::placeholder {
+    color: var(--white) !important
+} 
+
+.secInp  {
+    background: #fff !important; 
+    border: 1px solid rgba(206, 206, 206, 0.3) !important;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, 0.06)) !important;
+    color: #000 !important;
+}
+
+.secInp::placeholder {
+    color: var(--black) !important
+}
+
+
+.disableInputs {
+    border: none !important;
+    /* padding: 10px 0; */
+    background-color: transparent !important;
+}
+
+.primiry-link {
+    color: var(--primColor) !important;
+}
+
+.input-type-code {
+    width: 100% !important;
+    height: 115px !important;
+    margin-right: 10px !important;
+    outline: none !important;
+    border-radius: 40px !important;
+    border: 1px solid var(--gray)!important;
+    font-size: 22px !important;
+    color: var(--gray) !important;
+    text-align: center !important;
+    font-weight: bold!important ;
+    background-color: #F9F9F9!important;
+}
+
+section.authentication-wrapper {
+    overflow-x: hidden;
+}
+
+input[type='date'],
+select {
+    cursor: pointer;
+}
+
+
+
+.dashboard-inputs {
+    padding: 10px 25px !important;
+    border: 1px solid var(--gray) !important;
+    border-radius: 99px !important;
+    background-color: var(--white) !important;
+    color: black !important;
+}
+
+.dashboard-inputs:focus {
+    outline: none !important;
+}
+
+.primary-input-icon {
+    right: 15px;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.back {
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-right: 10px;
+    cursor: pointer;
+}

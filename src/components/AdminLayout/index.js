@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import DashboardDrawer from "../../DashboardDrawer";
-import DashboardHeader from "../../Headers/DashboardHeader";
-import "./styles.css";
+import DashboardDrawer from "../DashboardDrawer";
+import DashboardHeader from "../DashboardHeader";
+import "../../assets/css/globalStyles.css";
 const AdminLayout = (props) => {
   return (
     <div>
-      <DashboardHeader />
+      {/* <DashboardHeader /> */}
       <DashboardDrawer />
       {props?.children}
     </div>

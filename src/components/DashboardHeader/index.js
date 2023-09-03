@@ -1,7 +1,42 @@
 import React, { useEffect, useRef } from "react";
+import { useNavigate } from "react-router";
+import { images } from "../../assets";
+import LogoutPopup from "../Popups/LogoutPopup";
+import "./styles.css";
+// import { useDispatch, useSelector } from "react-redux";
+import { url } from "../../API/config";
+// import { getActorRole, getReduxKey } from "../../../Utility";
+// import useGeneral from "../../../Hooks/useGeneral";
+// import { unreadNotifications } from "../../../Redux/slices/generalSlice";
+import moment from "moment";
 
 export const DashboardHeader = (props) => {
-  
+  // const unreadNotification = useSelector(unreadNotifications);
+  // const userData = useSelector((state) => state.auth.userData);
+  // const token = useSelector((state) => state.auth.token);
+  // const dispatch = useDispatch();
+  const navigation = useNavigate();
+  const logoutModal = useRef();
+  // const { getUnreadNotifications } = useGeneral();
+  // const actorName = getReduxKey();
+  var session = null;
+  var actorName = "actor";
+  const userData = null;
+  const unreadNotification = [];
+  if (localStorage.getItem(`persist:storage-auth-${actorName}`) != null) {
+    session = JSON.parse(
+      localStorage.getItem(`persist:storage-auth-${actorName}`)
+    );
+  }
+  useEffect(() => {
+    // if (JSON.parse(session?.token)) {
+    //   // getUnreadNotifications();
+    // }
+  }, []);
+
+  const clickOnToggle = () => {
+    window.dispatchEvent(new Event("toogleDrawer"));
+  };
 
   return (
     <header>

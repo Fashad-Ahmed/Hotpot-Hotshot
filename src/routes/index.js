@@ -33,10 +33,42 @@ const Dashboard = lazy(() => import("../views/Dashboard"));
 const FAQ = lazy(() => import("../views/FAQ"));
 const Help = lazy(() => import("../views/Help"));
 const Home = lazy(() => import("../views/Home"));
-
 // Admin Routes
 const AdminDashboard = lazy(() => import("../views/Admin/AdminDashboard"));
 const UserManagement = lazy(() => import("../views/Admin/UserManagement"));
+const UserDetails = lazy(() => import("../views/Admin/UserDetails"));
+const OrderDetails = lazy(() => import("../views/Admin/OrderDetails")); //
+const BookingDetails = lazy(() => import("../views/Admin/BookingDetails"));
+const AdDetails = lazy(() => import("../views/Admin/AdDetails"));
+const FeaturedAdDetails = lazy(() =>
+  import("../views/Admin/FeaturedAdDetails")
+);
+const InspectionReport = lazy(() => import("../views/Admin/InspectionReport"));
+const CarCategories = lazy(() => import("../views/Admin/CarCategories"));
+const SubCategories = lazy(() => import("../views/Admin/SubCategories"));
+const MechanicsManagement = lazy(() =>
+  import("../views/Admin/MechanicsManagement")
+);
+const InspectionManagement = lazy(() =>
+  import("../views/Admin/InspectionManagement")
+);
+const PaymentLogs = lazy(() => import("../views/Admin/PaymentLogs"));
+const InventoryManagement = lazy(() =>
+  import("../views/Admin/InventoryManagement")
+);
+const OrderManagement = lazy(() => import("../views/Admin/OrderManagement"));
+const QueriesManagement = lazy(() =>
+  import("../views/Admin/QueriesManagement")
+);
+const FeatureAdPackages = lazy(() =>
+  import("../views/Admin/FeatureAdPackages")
+);
+const AdsReportManagement = lazy(() =>
+  import("../views/Admin/AdsReportManagement")
+);
+const NewsLetters = lazy(() => import("../views/Admin/NewsLetters"));
+const WebContents = lazy(() => import("../views/Admin/WebContents"));
+const Settings = lazy(() => import("../views/Admin/Settings"));
 
 const RoutesProvider = () => {
   return (
@@ -78,10 +110,99 @@ const RoutesProvider = () => {
           <Route path="/FAQ" exact element={<FAQ />} />
           <Route path="/Help" exact element={<Help />} />
           {/* admin routes */}
+          <Route
+            path="/Admin/AdminDashboard"
+            exact
+            element={<AdminDashboard />}
+          />
+          <Route
+            path="/Admin/UserManagement"
+            exact
+            element={<UserManagement />}
+          />
+          <Route path="/Admin/UserDetails" exact element={<UserDetails />} />
+          <Route
+            path="/Admin/OrderDetails/:id"
+            exact
+            element={<OrderDetails />}
+          />
+          <Route
+            path="/Admin/BookingDetails"
+            exact
+            element={<BookingDetails />}
+          />
+          <Route
+            path="/Admin/BookingDetails"
+            exact
+            element={<BookingDetails />}
+          />
+          <Route path="/Admin/ad-management" exact element={<AdDetails />} />
+          <Route
+            path="/Admin/FeaturedAdDetails"
+            exact
+            element={<FeaturedAdDetails />}
+          />
+          <Route
+            path="/Admin/InspectionReport"
+            exact
+            element={<InspectionReport />}
+          />
+          <Route
+            path="/Admin/CarCategories"
+            exact
+            element={<CarCategories />}
+          />
+          <Route
+            path="/Admin/sub-categories/:id"
+            exact
+            element={<SubCategories />}
+          />
+          <Route
+            path="/Admin/mechanic-management"
+            exact
+            element={<MechanicsManagement />}
+          />
+          <Route
+            path="/Admin/inspection-management"
+            exact
+            element={<InspectionManagement />}
+          />
+          <Route path="/Admin/payment-logs" exact element={<PaymentLogs />} />
+          <Route
+            path="/Admin/inventory-management"
+            exact
+            element={<InventoryManagement />}
+          />
+          <Route
+            path="/Admin/order-management"
+            exact
+            element={<OrderManagement />}
+          />
+          <Route
+            path="/Admin/queries-management"
+            exact
+            element={<QueriesManagement />}
+          />
+          <Route
+            path="/Admin/queries-management"
+            exact
+            element={<QueriesManagement />}
+          />
+          <Route
+            path="/Admin/feature-ad-packages"
+            exact
+            element={<FeatureAdPackages />}
+          />
+          <Route
+            path="/Admin/ad-report-management"
+            exact
+            element={<AdsReportManagement />}
+          />
+          <Route path="/Admin/news-letter" exact element={<NewsLetters />} />
 
-          <Route path="/AdminDashboard" exact element={<AdminDashboard />} />
+          <Route path="/Admin/contents" exact element={<WebContents />} />
 
-          <Route path="/UserManagement" exact element={<UserManagement />} />
+          <Route path="/Admin/settings" exact element={<Settings />} />
         </Routes>
       </Suspense>
       {/* <MobileBottombar /> */}

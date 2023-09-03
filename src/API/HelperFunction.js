@@ -1,4 +1,4 @@
-import { getActorRole, getReduxKey } from "../Utility/index";
+import { getActorRole, getReduxKey } from "../utils/index";
 import { NotificationManager } from "react-notifications";
 
 const __DEV__ = true;

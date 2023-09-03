@@ -23,6 +23,11 @@ const Home = () => {
           }}
           className="container"
         >
+          <p style={{ textAlign: "center", marginTop: "5%" }}>
+            <Link to="/Admin/AdminDashboard" className="btn-drk">
+              Go To Admin Panel{" "}
+            </Link>
+          </p>
           <h1
             style={{
               fontSize: "70px",
