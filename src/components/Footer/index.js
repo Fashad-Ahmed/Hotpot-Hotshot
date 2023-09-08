@@ -17,6 +17,14 @@ const Footer = () => {
     "/JunkHaulForm",
     "/MotorVehicleForm",
     "/Under2kForm",
+    "/SignUp",
+    "/JOne",
+    "/Jtwo",
+    "/JThree",
+    "/JFour",
+    "/JFive",
+    "/JSix",
+    "/JSeven",
   ];
 
   if (arr.includes(location.pathname)) {

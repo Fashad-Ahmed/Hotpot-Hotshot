@@ -69,6 +69,22 @@ const AdsReportManagement = lazy(() =>
 const NewsLetters = lazy(() => import("../views/Admin/NewsLetters"));
 const WebContents = lazy(() => import("../views/Admin/WebContents"));
 const Settings = lazy(() => import("../views/Admin/Settings"));
+const Profile = lazy(() => import("../views/Profile"));
+//Auth
+const SignUp = lazy(() => import("../views/Auth/SignUp"));
+
+//JunkHaul
+const JunkHaulDashboard = lazy(() => import("../views/JunkHaulDir/Dashboard"));
+const JunkHaulShipment = lazy(() => import("../views/JunkHaulDir/Shipments"));
+const JunkHaulSummary = lazy(() => import("../views/JunkHaulDir/Summary"));
+const JunkHaulTracking = lazy(() => import("../views/JunkHaulDir/Tracking"));
+const JOne = lazy(() => import("../views/JunkHaulDir/One"));
+const JTwo = lazy(() => import("../views/JunkHaulDir/Two"));
+const JThree = lazy(() => import("../views/JunkHaulDir/Three"));
+const JFour = lazy(() => import("../views/JunkHaulDir/Four"));
+const JFive = lazy(() => import("../views/JunkHaulDir/Five"));
+const JSix = lazy(() => import("../views/JunkHaulDir/Six"));
+const JSeven = lazy(() => import("../views/JunkHaulDir/Seven"));
 
 const RoutesProvider = () => {
   return (
@@ -78,7 +94,9 @@ const RoutesProvider = () => {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/Home" exact element={<Navigate to="/" replace />} />
+          <Route path="/SignUp" exact element={<SignUp />} />
           <Route path="/About" exact element={<About />} />
+          <Route path="/Profile" exact element={<Profile />} />
           <Route path="/Blog" exact element={<Blog />} />
           <Route path="/BoxTruck" exact element={<BoxTruck />} />
           <Route path="/BoxTruckForm" exact element={<BoxTruckForm />} />
@@ -95,6 +113,29 @@ const RoutesProvider = () => {
           <Route path="/HHGuide" exact element={<HHGuide />} />
           <Route path="/Insurance" exact element={<Insurance />} />
           <Route path="/JunkHaul" exact element={<JunkHaul />} />
+          <Route
+            path="/JunkHaulDashboard"
+            exact
+            element={<JunkHaulDashboard />}
+          />
+          <Route
+            path="/JunkHaulShipment"
+            exact
+            element={<JunkHaulShipment />}
+          />
+          <Route
+            path="/JunkHaulTracking"
+            exact
+            element={<JunkHaulTracking />}
+          />
+          <Route path="/JOne" exact element={<JOne />} />
+          <Route path="/JTwo" exact element={<JTwo />} />{" "}
+          <Route path="/JThree" exact element={<JThree />} />
+          <Route path="/JFour" exact element={<JFour />} />
+          <Route path="/JFive" exact element={<JFive />} />
+          <Route path="/JSix" exact element={<JSix />} />
+          <Route path="/JSeven" exact element={<JSeven />} />
+          <Route path="/Summary" exact element={<JunkHaulSummary />} />
           <Route path="/JunkHaulForm" exact element={<JunkHaulForm />} />
           <Route path="/MotorVehicle" exact element={<MotorVehicle />} />
           <Route path="MotorVehicleForm" exact element={<MotorVehicleForm />} />
@@ -199,9 +240,7 @@ const RoutesProvider = () => {
             element={<AdsReportManagement />}
           />
           <Route path="/Admin/news-letter" exact element={<NewsLetters />} />
-
           <Route path="/Admin/contents" exact element={<WebContents />} />
-
           <Route path="/Admin/settings" exact element={<Settings />} />
         </Routes>
       </Suspense>

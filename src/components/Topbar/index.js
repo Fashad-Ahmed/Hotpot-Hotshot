@@ -13,6 +13,19 @@ const Topbar = () => {
     "/JunkHaulForm",
     "/MotorVehicleForm",
     "/Under2kForm",
+    "/SignUp",
+    "/JunkHaulDashboard",
+    "/Profile",
+    "/JunkHaulShipment",
+    "/Summary",
+    "/JunkHaulTracking",
+    "/JOne",
+    "/Jtwo",
+    "/JThree",
+    "/JFour",
+    "/JFive",
+    "/JSix",
+    "/JSeven",
   ];
 
   if (arr.includes(location.pathname)) {
@@ -299,6 +312,14 @@ const Topbar = () => {
               >
                 Sign In <img src={vector} />
               </a>{" "}
+            </p>
+            <p style={{ textAlign: "right", marginTop: "1.5%" }}>
+              <Link
+                to="/SignUp"
+                className="nav-btn logo d-none d-sm-none d-md-none d-lg-block"
+              >
+                Sign Up <img src={vector} />
+              </Link>
             </p>
           </div>
         </div>

@@ -80,14 +80,8 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/Under2k">
-                            <img
-                              src={lbImg}
-                              width="100%"
-                              style={{
-                                display: "inline-block",
-                              }}
-                            />
+                          <Link to="/JunkHaulDashboard">
+                            <img src={lbImg} width="100%" />
                           </Link>
                         </div>
                       </div>
@@ -143,7 +137,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/GeneralFreight">
+                          <Link to="/JunkHaulDashboard">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -200,7 +194,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/MotorVehicle">
+                          <Link to="/JunkHaulDashboard">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -257,7 +251,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaul">
+                          <Link to="/JunkHaulDashboard">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -314,7 +308,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/BoxTruck">
+                          <Link to="/JunkHaulDashboard">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
