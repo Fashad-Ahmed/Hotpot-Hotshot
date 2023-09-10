@@ -8,23 +8,34 @@ import Topbar from "../components/Topbar";
 const About = lazy(() => import("../views/About"));
 const Blog = lazy(() => import("../views/Blog"));
 const BoxTruck = lazy(() => import("../views/BoxTruck"));
-const BoxTruckForm = lazy(() => import("../views/BoxTruckForm"));
+// const BoxTruckForm = lazy(() => import("../views/BoxTruckForm"));
+const BoxTruckForm = lazy(() => import("../views/ShortForms/26BoxTruck/index"));
+const BoxTruckFormLong = lazy(() => import("../views/LongForms/26BoxTruck/index"));
+
 const CarriersAapp = lazy(() => import("../views/CarriersAapp"));
 const CdlNon = lazy(() => import("../views/CdlNon"));
 const CDLSchool = lazy(() => import("../views/CDLSchool"));
 const ELD = lazy(() => import("../views/ELD"));
 const GeneralFreight = lazy(() => import("../views/GeneralFreight"));
-const GeneralFreightForm = lazy(() => import("../views/GeneralFreightForm"));
+// const GeneralFreightForm = lazy(() => import("../views/GeneralFreightForm"));
+const GeneralFreightForm = lazy(() => import("../views/ShortForms/GeneralFreight/index"));
+
 const HHGuide = lazy(() => import("../views/HHGuide"));
 const Insurance = lazy(() => import("../views/Insurance"));
 const JunkHaul = lazy(() => import("../views/JunkHaul"));
-const JunkHaulForm = lazy(() => import("../views/JunkHaulForm"));
+// const JunkHaulForm = lazy(() => import("../views/JunkHaulForm"));
+const JunkHaulForm = lazy(() => import("../views/ShortForms/JunkHaulOff/index"));
+
 const MotorVehicle = lazy(() => import("../views/MotorVehicle"));
-const MotorVehicleForm = lazy(() => import("../views/MotorVehicleForm"));
+// const MotorVehicleForm = lazy(() => import("../views/MotorVehicleForm"));
+const MotorVehicleForm = lazy(() => import("../views/ShortForms/MotorVehicles/index"));
+
 const Roadside = lazy(() => import("../views/Roadside"));
 const TrackingTech = lazy(() => import("../views/TrackingTech"));
 const Under2k = lazy(() => import("../views/Under2k"));
-const Under2kForm = lazy(() => import("../views/Under2kForm"));
+// const Under2kForm = lazy(() => import("../views/Under2kForm"));
+const Under2kForm = lazy(() => import("../views/ShortForms/LessThen2k"));
+
 const Usdot = lazy(() => import("../views/Usdot"));
 const Vetting = lazy(() => import("../views/Vetting"));
 const WeightMatters = lazy(() => import("../views/WeightMatters"));
@@ -100,6 +111,9 @@ const RoutesProvider = () => {
           <Route path="/Blog" exact element={<Blog />} />
           <Route path="/BoxTruck" exact element={<BoxTruck />} />
           <Route path="/BoxTruckForm" exact element={<BoxTruckForm />} />
+          
+          <Route path="/BoxTruckFormLong" exact element={<BoxTruckFormLong />} />
+
           <Route path="/CarriersApp" exact element={<CarriersAapp />} />
           <Route path="/CdlNon" exact element={<CdlNon />} />
           <Route path="/CDLSchool" exact element={<CDLSchool />} />

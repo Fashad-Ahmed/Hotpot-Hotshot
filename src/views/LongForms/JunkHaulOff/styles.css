@@ -1,0 +1,61 @@
+.one-row {
+  background-color: aqua;
+}
+.cl-mine {
+  text-align: center;
+  padding: 50px 10px;
+  border: 1pc solid black;
+}
+.img-mine {
+  background-color: bisque;
+}
+.pd-20 {
+  padding: 20px;
+}
+.mgtb {
+  margin: 30px 0px;
+}
+.pdtb {
+  margin-top: 100px;
+  padding: 20px 0px;
+}
+.btn-primary {
+  background-color: #2b2728;
+  outline: none;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: transparent;
+  color: #2b2728;
+  border: 1px solid #2b2728;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #2b2728;
+}
+.nav-link {
+  color: #2b2728;
+}
+.pdr-20 {
+  padding-right: 20px;
+}
+.pd-10 {
+  padding: 10px;
+}
+h3 {
+  text-align: center;
+}
+
+.form-check-input:checked {
+  background-color: #2b2728;
+  border-color: #2b2728;
+}
+.h-n:hover {
+  background-color: #2b2728;
+}
+.danger {
+  color: red;
+}
+.mt300 {
+  margin-top: 300px;
+}
