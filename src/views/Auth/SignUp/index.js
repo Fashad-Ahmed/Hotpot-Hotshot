@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import bgImg from "../../../assets/hhs_logos_wordmark_black.png";
+import img from "../../../assets/Group 75322527.png";
 import "../../../styles/newStyles.css";
 import { Link } from "react-router-dom";
 const SignUp = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const data = {
+      email: email,
+      password: password,
+    };
+
+    console.log("data", data);
+  };
+
   return (
     <div className="bg">
       <div className="container w-100 d-flex flex-column justify-content-center align-items-center">
@@ -24,21 +39,23 @@ const SignUp = () => {
               <div className="input">
                 <input
                   type="text"
-                  placeholder="Enter your reaistered email address"
+                  placeholder="Enter your registered email address"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
             </div>
             <div className="col-lg-6 col-md-sm-4 w-75 ">
-              <div className="d-flex justify-content-between ">
+              <div className="w-75">
                 <div>Password</div>
-                <div>
-                  <a href="#">Forgot your password</a>
-                </div>
+                <div>{/* <a href="#">Forgot your password</a> */}</div>
               </div>
               <div className="input">
                 <input
                   type="text"
-                  placeholder="Enter your reaistered email address"
+                  placeholder="Enter your password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
             </div>
@@ -51,7 +68,12 @@ const SignUp = () => {
             <div className="col-lg-6 col-md-sm-4 w-75">
               <Link to={"/"}>
                 {" "}
-                <button className="w-100 mb-4">
+                <button
+                  onClick={() => {
+                    handleSubmit();
+                  }}
+                  className="w-100 mb-4"
+                >
                   <b>Sign in</b>
                 </button>
               </Link>
@@ -59,7 +81,7 @@ const SignUp = () => {
           </div>
           <div className="col-lg-8 col-md-sm-6 w-75">
             <div className="">
-              <img src="./assit/images/Group 75322527.png" alt="" />
+              <img src={img} alt="" />
             </div>
             <div>
               <p style={{ color: "white" }}>

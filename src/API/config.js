@@ -9,7 +9,7 @@ export const base_url = `${url}apis/`;
 export const exndpoints = {
   auth: {
     login: "user/login",
-    signup: "user/signup",
+    signup: "user/register",
     sendEmail: "user/forgotPassword/request",
     verifyOtpCode: "user/forgotPassword/verifyCode",
     setPassword: "user/forgotPassword/changePassword",

@@ -37,7 +37,9 @@
     "redux-thunk": "^2.4.1",
     "slick-carousel": "^1.8.1",
     "swiper": "^10.1.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "react-redux": "^8.0.2",
+    "@react-native-async-storage/async-storage": "^1.19.3"
   },
   "scripts": {
     "start": "react-scripts start",
