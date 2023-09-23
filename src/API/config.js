@@ -4,9 +4,9 @@ export const url = "https://mobileapps.onlinetestingserver.com:16001/";
 
 export const mapApiKey = "AIzaSyCL2XFs2hqb_aQFKtcUVf9xyhdxLBSFdp0";
 
-export const base_url = `${url}apis/`;
+export const base_url = "http://50.16.89.113:16500/api";
 
-export const exndpoints = {
+export const endpoints = {
   auth: {
     login: "user/login",
     signup: "user/signup",
@@ -121,5 +121,9 @@ export const exndpoints = {
   },
   general: {
     subscribe: "newsLetters/subscriber/create",
+  },
+
+  quote: {
+    create: "/user/createQuotation",
   },
 };

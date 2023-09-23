@@ -2,33 +2,13 @@ import React, { useState } from "react";
 import TruckImage from "../../../assets/Box Truck.png";
 import "./styles.css";
 import { errorToast } from "../../../utils/toast";
+import { useCreateQuote } from "../../../hook/useCreateQuote";
 
 const LessThen2k = () => {
   const [steps, setSteps] = useState(1);
+  const [createQuoteFunc] = useCreateQuote();
   const [readyToPick, setReadyToPick] = useState(true);
   const [errorPopup, setErrorPopup] = useState(false);
-  // {
-  //   "pickupZip":"1231231",
-  //   "dropOffZip":"857888",
-  //   "type":"lessThan2KLbs",
-  //   "dimensionUnder896":"true",
-  //   "longestDimesntionOfCargo":"87878",
-  //   "cargoDescription":"ADASDASDA",
-  //   "cargoLoadedBy":"manuallyByDriver",
-  //   "cargoUnloadBy":"manuallyByReciever",
-  // "estimatedWeight":"lessThan200",
-  // "vehicleOperable":false,
-  // "vehicleDetails":{
-  //     "year":"2022",
-  //     "make":"Honda",
-  //     "model":"ADA"
-  // },
-  //   "media":["ADasd"],
-  //   "cargoReadyForPickup":"true",
-  //   "quotationVia":"email",
-  //   "email":"abc@mailinator.com"
-  //   }
-
   const [pickupZip, setPickupZip] = useState();
   const [dropOffZip, setDropOffZip] = useState();
   const [dimensionUnder896, setDimensionUnder896] = useState();
@@ -65,6 +45,28 @@ const LessThen2k = () => {
   };
   const handleCargoLoadedByChange = (event) => {
     setCargoLoadedBy(event.target.value);
+  };
+
+  const handleSubmit = () => {
+    let data = {
+      pickupZip,
+      dropOffZip,
+      type: "lessThan2KLbs",
+      dimensionUnder896,
+      longestDimesntionOfCargo,
+      cargoDescription,
+      cargoLoadedBy,
+      cargoUnloadBy,
+      estimatedWeight: "lessThan200",
+      vehicleOperable: false,
+      vehicleDetails,
+      media,
+      cargoReadyForPickup,
+      quotationVia,
+      email,
+    };
+    console.log(data);
+    createQuoteFunc(data);
   };
   const step1 = () => {
     return (
@@ -896,7 +898,7 @@ const LessThen2k = () => {
                     </div>
                   </div>
                   {/* <!-- Names --> */}
-                  {quotationVia === "email" && (
+                  {/* {quotationVia === "email" && (
                     <div className="row" style={{ padding: "20px 0px" }}>
                       <div className="col-12 pd-20">
                         <h2 className="form-label mgtb">Email Address</h2>
@@ -908,7 +910,7 @@ const LessThen2k = () => {
                         />
                       </div>
                     </div>
-                  )}
+                  )} */}
                 </div>
                 {/* <!-- Cargo img --> */}
                 <div className="col-6">
@@ -1043,10 +1045,12 @@ const LessThen2k = () => {
             <div class="row">
               <div class="col-lg-2 col-md-4 col-sm-6 pd-20">
                 <button
-                  type="submit"
+                  type="button"
                   class="btn btn-primary"
                   style={{ width: "100%" }}
-                  onClick={handleSteps}
+                  onClick={() => {
+                    handleSubmit();
+                  }}
                 >
                   Submit
                 </button>
@@ -1065,13 +1069,13 @@ const LessThen2k = () => {
     if (steps < 11) {
       if (steps == 1) {
         if (!pickupZip) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 2) {
         if (!dropOffZip) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
@@ -1083,38 +1087,38 @@ const LessThen2k = () => {
       } else if (steps == 4) {
         console.log(longestDimesntionOfCargo);
         if (!longestDimesntionOfCargo) {
-          alert("Please select it");
+          errorToast("Please select it");
 
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 5) {
         if (!cargoDescription) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 6) {
         if (media?.length < 1) {
-          alert("Please upload");
+          errorToast("Please upload");
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 7) {
         if (!cargoLoadedBy) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 8) {
         if (!cargoUnloadBy) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
       } else if (steps == 8) {
         if (!cargoUnloadBy) {
-          alert("Please fill it");
+          errorToast("Please fill it");
           return;
         }
         setSteps(steps + 1);
@@ -1123,58 +1127,50 @@ const LessThen2k = () => {
           return;
         }
         setSteps(steps + 1);
+      } else if (steps == 10) {
+        if (!quotationVia) {
+          return;
+        }
+        setSteps(steps + 1);
       }
     }
   };
 
   const renderSteps = () => {
-    switch (steps) {
-      case 1: {
-        return step1();
+    if (steps === 1) {
+      return step1();
+    } else if (steps === 2) {
+      return step2();
+    } else if (steps === 3) {
+      return step3();
+    } else if (steps === 4) {
+      return step4();
+    } else if (steps === 5) {
+      return step5();
+    } else if (steps === 6) {
+      return step6();
+    } else if (steps === 7) {
+      return step7();
+    } else if (steps === 8) {
+      return step8();
+    } else if (steps === 9) {
+      return step9One();
+    } else if (steps === 10) {
+      if (readyToPick) {
+        return step10();
+      } else {
+        return step9Two();
       }
-      case 2: {
-        return step2();
-      }
-      case 3: {
-        return step3();
-      }
-      case 4: {
-        return step4();
-      }
-      case 5: {
-        return step5();
-      }
-      case 6: {
-        return step6();
-      }
-      case 7: {
-        return step7();
-      }
-      case 8: {
-        return step8();
-      }
-      case 9: {
-        return step9One();
-      }
-      case 10: {
-        if (readyToPick) {
-          return step10();
-        } else {
-          return step9Two();
-        }
-      }
-      case 11: {
-        if (quotationVia == "text") {
-          return step11One();
-        } else {
-          return step11Two();
-        }
-      }
-      default: {
-        return step1();
+    } else if (steps === 11) {
+      if (quotationVia === "text") {
+        // return step11One();
+        return step11Two();
+      } else {
+        return step11Two();
       }
     }
   };
+
   return <>{renderSteps()}</>;
 };
 
