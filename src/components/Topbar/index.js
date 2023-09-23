@@ -26,7 +26,6 @@ const Topbar = () => {
     "/JFive",
     "/JSix",
     "/JSeven",
-    "/BoxTruckFormLong",
   ];
 
   if (arr.includes(location.pathname)) {

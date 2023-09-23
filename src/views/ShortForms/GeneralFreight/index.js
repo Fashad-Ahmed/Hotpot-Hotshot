@@ -1,15 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import Header from "../../../components/Header";
-import TruckImage from "../../../assets/Box Truck.png";
 import "./styles.css";
+import TruckImage from "../../../assets/Images/generalIcon.png";
 
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import Header from "../../../components/Header";
-// import svsImg from "../../assets/services image/image 461.png";
-// import serImg from "../../assets/Group 75322246.png";
-// import "../../../styles/style.css";
+import { images } from "../../../assets/index";
 
 const GeneralFreight = () => {
   const [steps, setSteps] = useState(1);
@@ -21,12 +14,19 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Pick-up Zip <span class="danger">*</span>
@@ -41,16 +41,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -83,12 +73,19 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Drop-off Zip <span class="danger">*</span>
@@ -103,16 +100,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -145,74 +132,54 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
-                        Is the longest dimension under 8’ (96”)?{" "}
+                        What is the longest dimension of your cargo?{" "}
                         <span class="danger">*</span>
                       </h2>
-                      <div style={{ padding: "0px 20px" }}>
-                        <a>
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            style={{ width: "30%" }}
-                            onClick={handleSteps}
-                          >
-                            Yes
-                          </button>
-                        </a>
-                        <br />
-                        <br />
-                        <button
-                          type="button"
-                          // onclick="myFunction()"
-                          class="btn btn-primary"
-                          style={{ width: "30%" }}
-                          onClick={() => setErrorPopup(true)}
-                        >
-                          No
-                        </button>
-                        {errorPopup && (
-                          <div
-                            id="myDIV"
-                            style={{
-                              // display: "none",
-                              width: "100%",
-                              backgroundColor: "#ced4da",
-                              padding: "20px",
-                              margin: "20px 0px",
-                              borderLeft: "1px solid black",
-                            }}
-                          >
-                            “ Your cargo may be too large for this vehicle.
-                            Please select the <a> “General Freight” </a>option
-                            above to obtain a quote for your shipment. “
-                          </div>
-                        )}
-                      </div>
+                      <input
+                        type="number"
+                        name=""
+                        id=""
+                        class="form-control"
+                        placeholder="Please enter longest dimension"
+                      />
                     </div>
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
+              </div>
+            </div>
+          </div>
+          <div class="header container">
+            <div class="row">
+              <div class="col-lg-2 col-md-4 col-sm-6 pd-20">
+                <a>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    style={{ width: "100%" }}
+                    onClick={handleSteps}
+                  >
+                    Next
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -227,13 +194,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Estimated weight of your cargo?{" "}
@@ -288,18 +264,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -332,12 +296,21 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
-                  <div class="row" style={{ padding: "100px 0px " }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Description of cargo <span class="danger">*</span>
@@ -354,18 +327,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -398,13 +359,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px " }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Please upload images or videos{" "}
@@ -424,18 +394,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -468,13 +426,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px " }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         How will your cargo be loaded?
@@ -507,18 +474,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -551,13 +506,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px " }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         How will your cargo be unloaded?
@@ -590,18 +554,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -634,13 +586,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Is your cargo ready for pick-up?{" "}
@@ -651,10 +612,9 @@ const GeneralFreight = () => {
                           <button
                             type="button"
                             class="btn btn-primary"
-                            style={{ width: "30%" }}
+                            style={{ width: "15%" }}
                             onClick={() => {
-                              handleSteps();
-                              setReadyToPick(true);
+                              handleSteps(), setReadyToPick(true);
                             }}
                           >
                             Yes
@@ -666,10 +626,9 @@ const GeneralFreight = () => {
                           <button
                             type="button"
                             class="btn btn-primary"
-                            style={{ width: "30%" }}
+                            style={{ width: "15%" }}
                             onClick={() => {
-                              handleSteps();
-                              setReadyToPick(false);
+                              handleSteps(), setReadyToPick(false);
                             }}
                           >
                             No
@@ -680,18 +639,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -706,13 +653,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px " }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Please select your pick-up date
@@ -723,18 +679,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -768,64 +712,57 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
-                  {/* <!-- Names --> */}
-
-                  <div class="row" style={{ padding: "100px 0px" }}>
-                    <div class="col-12 pd-20">
-                      <h2 class="form-label mgtb">
-                        How would you like your quote to be delivered?
-                        <span class="danger">*</span>
-                      </h2>
-                      <div style={{ padding: "0px 20px" }}>
-                        <a>
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            style={{ width: "30%" }}
-                            onClick={() => {
-                              handleSteps();
-                              setGetQuoteBy("text");
-                            }}
-                          >
-                            Text
-                          </button>
-                        </a>
-                        <br />
-                        <br />
-                        <a>
-                          <button
-                            type="button"
-                            class="btn btn-primary"
-                            style={{ width: "30%" }}
-                            onClick={() => {
-                              handleSteps();
-                              setGetQuoteBy("email");
-                            }}
-                          >
-                            Email
-                          </button>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  {/* <!-- Names --> */}
-                </div>
                 {/* <!-- Cargo img --> */}
 
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
                 </div>
 
                 {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="col-12">
+                {/* <!-- Names --> */}
+
+                <div class="row">
+                  <div class="col-12 pd-20">
+                    <h2 class="form-label mgtb">
+                      How would you like your quote to be delivered?
+                      <span class="danger">*</span>
+                    </h2>
+                    <div style={{ padding: "0px 20px" }}>
+                      <a>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          style={{ width: "15%" }}
+                          onClick={() => {
+                            handleSteps(), setGetQuoteBy("text");
+                          }}
+                        >
+                          Text
+                        </button>
+                      </a>
+                      <br />
+                      <br />
+                      <a>
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          style={{ width: "15%" }}
+                          onClick={() => {
+                            handleSteps(), setGetQuoteBy("email");
+                          }}
+                        >
+                          Email
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {/* <!-- Names --> */}
               </div>
             </div>
           </div>
@@ -840,13 +777,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Please enter your Mobile No.
@@ -863,18 +809,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -905,13 +839,22 @@ const GeneralFreight = () => {
       <div class="main  justify-content-center ">
         <form action="" d-flex>
           {/* <!-- Form --> */}
-          <div id="main_body_1 pdtb" style={{ marginTop: "200px" }}>
+          <div id="main_body_1 pdtb" style={{ marginTop: "100px;" }}>
             <div class="container">
               <div class="row">
-                <div class="col-6">
+                {/* <!-- Cargo img --> */}
+
+                <div class="col-12">
+                  <img src={TruckImage} width="100%" alt="" />
+                </div>
+
+                {/* <!-- Cargo img  --> */}
+              </div>
+              <div class="row">
+                <div class="col-12">
                   {/* <!-- Names --> */}
 
-                  <div class="row" style={{ padding: "100px 0px" }}>
+                  <div class="row">
                     <div class="col-12 pd-20">
                       <h2 class="form-label mgtb">
                         Please enter your email address
@@ -928,18 +871,6 @@ const GeneralFreight = () => {
                   </div>
                   {/* <!-- Names --> */}
                 </div>
-                {/* <!-- Cargo img --> */}
-
-                <div class="col-6">
-                  <img
-                    src={TruckImage}
-                    style={{ marginTop: "100px" }}
-                    width="100%"
-                    alt=""
-                  />
-                </div>
-
-                {/* <!-- Cargo img  --> */}
               </div>
             </div>
           </div>
@@ -1009,7 +940,7 @@ const GeneralFreight = () => {
         }
       }
       case 11: {
-        if (getQuoteBy == "text") {
+        if (getQuoteBy == "email") {
           return step11Two();
         } else {
           return step11One();

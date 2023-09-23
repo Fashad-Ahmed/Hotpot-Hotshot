@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../../components/Header";
-import TruckImage from "../../../assets/Box Truck.png";
+import TruckImage from "../../../assets/boxtruckshort.png";
 import "./styles.css";
 
 const BoxTruck = () => {
@@ -646,8 +646,7 @@ const BoxTruck = () => {
                             class="btn btn-primary"
                             style={{ width: "30%" }}
                             onClick={() => {
-                              handleSteps();
-                              setReadyToPick(true);
+                              handleSteps(), setReadyToPick(true);
                             }}
                           >
                             Yes
@@ -661,8 +660,7 @@ const BoxTruck = () => {
                             class="btn btn-primary"
                             style={{ width: "30%" }}
                             onClick={() => {
-                              handleSteps();
-                              setReadyToPick(false);
+                              handleSteps(), setReadyToPick(false);
                             }}
                           >
                             No
@@ -780,8 +778,7 @@ const BoxTruck = () => {
                             class="btn btn-primary"
                             style={{ width: "30%" }}
                             onClick={() => {
-                              handleSteps();
-                              setGetQuoteBy("text");
+                              handleSteps(), setGetQuoteBy("text");
                             }}
                           >
                             Text
@@ -795,8 +792,7 @@ const BoxTruck = () => {
                             class="btn btn-primary"
                             style={{ width: "30%" }}
                             onClick={() => {
-                              handleSteps();
-                              setGetQuoteBy("email");
+                              handleSteps(), setGetQuoteBy("email");
                             }}
                           >
                             Email

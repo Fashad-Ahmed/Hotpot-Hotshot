@@ -1,16 +1,15 @@
-export const url = "http://50.16.89.113:16500";
-// "https://mobileapps.onlinetestingserver.com:16001/";
+export const url = "https://mobileapps.onlinetestingserver.com:16001/";
 // export const url = "http://10.2.1.107:16001/";
 // export const url = "http://10.2.0.227:16001/";
 
 export const mapApiKey = "AIzaSyCL2XFs2hqb_aQFKtcUVf9xyhdxLBSFdp0";
 
-export const base_url = url;
+export const base_url = `${url}apis/`;
 
 export const exndpoints = {
   auth: {
     login: "user/login",
-    signup: "user/register",
+    signup: "user/signup",
     sendEmail: "user/forgotPassword/request",
     verifyOtpCode: "user/forgotPassword/verifyCode",
     setPassword: "user/forgotPassword/changePassword",
@@ -122,8 +121,5 @@ export const exndpoints = {
   },
   general: {
     subscribe: "newsLetters/subscriber/create",
-  },
-  quotation: {
-    createQuotation: "/user/createQuotation",
   },
 };

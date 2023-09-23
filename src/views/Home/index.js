@@ -24,9 +24,9 @@ const Home = () => {
           className="container"
         >
           <p style={{ textAlign: "center", marginTop: "5%" }}>
-            <Link to="/Admin/AdminDashboard" className="btn-drk">
+            {/* <Link to="/Admin/AdminDashboard" className="btn-drk">
               Go To Admin Panel{" "}
-            </Link>
+            </Link> */}
           </p>
           <h1
             style={{
@@ -80,7 +80,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaulDashboard">
+                          <Link to="/Under2k">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -137,7 +137,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaulDashboard">
+                          <Link to="/GeneralFreight">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -194,7 +194,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaulDashboard">
+                          <Link to="/MotorVehicle">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -251,7 +251,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaulDashboard">
+                          <Link to="/JunkHaul">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>
@@ -308,7 +308,7 @@ const Home = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="/JunkHaulDashboard">
+                          <Link to="/BoxTruck">
                             <img src={lbImg} width="100%" />
                           </Link>
                         </div>

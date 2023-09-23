@@ -101,7 +101,7 @@ const Under2k = () => {
                           fontFamily: "serif",
                         }}
                       >
-                        Less Than <br /> 2k Lbs{" "}
+                        26' Box Truck
                       </h3>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ const Under2k = () => {
                         fontFamily: "serif",
                       }}
                     >
-                      Less Than 2k Lbs
+                      26' Box Truck
                     </h2>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -124,7 +124,7 @@ const Under2k = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="Under2k">
+                          <Link to="/BoxTruck">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -173,7 +173,7 @@ const Under2k = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="MotorVehicle">
+                          <Link to="/MotorVehicle">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -222,7 +222,7 @@ const Under2k = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link href="JunkHaul">
+                          <Link to="/JunkHaul">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -271,7 +271,7 @@ const Under2k = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="GeneralFreight">
+                          <Link to="/GeneralFreight">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>

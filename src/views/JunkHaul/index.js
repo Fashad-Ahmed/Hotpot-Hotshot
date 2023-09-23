@@ -123,7 +123,7 @@ const JunkHaul = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="Under2k">
+                          <Link to="/Under2k">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -172,7 +172,7 @@ const JunkHaul = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="MotorVehicle">
+                          <Link to="/MotorVehicle">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -198,7 +198,7 @@ const JunkHaul = () => {
                           fontFamily: "serif",
                         }}
                       >
-                        Junk Haul-off
+                        26' Box Truck
                       </h3>
                     </div>
                   </div>
@@ -208,7 +208,7 @@ const JunkHaul = () => {
                         fontFamily: "serif",
                       }}
                     >
-                      Junk Haul-off
+                      26' Box Truck
                     </h2>
                     <p>
                       Lorem Ipsum is simply dummy text of the printing and
@@ -221,7 +221,7 @@ const JunkHaul = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link href="JunkHaul">
+                          <Link to="/BoxTruck">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -270,7 +270,7 @@ const JunkHaul = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="GeneralFreight">
+                          <Link to="/GeneralFreight">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>

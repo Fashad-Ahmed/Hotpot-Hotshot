@@ -18,7 +18,7 @@ const BoxTruck = () => {
             <div className="col-lg-2 col-md-1"></div>
             <div className="col-lg-8 col-md-10">
               <h1 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
-                26’Box truck
+                26’ Box truck
               </h1>
               <h2 data-aos="zoom-in" data-aos-delay={300} data-aos-once="true">
                 It is a long established fact that a will be distracted by the
@@ -123,7 +123,7 @@ const BoxTruck = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="Under2k">
+                          <Link to="/Under2k">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -172,7 +172,7 @@ const BoxTruck = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="MotorVehicle">
+                          <Link to="/MotorVehicle">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -221,7 +221,7 @@ const BoxTruck = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link href="JunkHaul">
+                          <Link to="/JunkHaul">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
@@ -270,7 +270,7 @@ const BoxTruck = () => {
                       <div className="col-lg-5 col-md-5 col-sm-5 col-5" />
                       <div className="col-lg-2 col-md-2 col-sm-2 col-2 ">
                         <div className="link-btn">
-                          <Link to="GeneralFreight">
+                          <Link to="/GeneralFreight">
                             <img src={serImg} width="100%" />
                           </Link>
                         </div>
